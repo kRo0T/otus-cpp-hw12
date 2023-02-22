@@ -5,12 +5,12 @@ set(ENABLE_PRECOMPILED_HEADERS OFF)
 
 project(fashion_mnist VERSION ${PROJECT_VESRION})
 
-include(CTest)
-enable_testing()
+#include(CTest)
+#enable_testing()
 
 add_executable(fashion_mnist main.cpp)
 
-#add_subdirectory(eigen-3.4.0/eigen-3.4.0/)
+add_subdirectory(eigen-3.4.0/eigen-3.4.0/)
 #include_directories(./eigen-3.4.0/eigen-3.4.0/)
 #set(Eigen3_DIR "./eigen-3.4.0/eigen-3.4.0/cmake/")
 #set(CMAKE_PREFIX_PATH "./eigen-3.4.0/eigen-3.4.0/")
